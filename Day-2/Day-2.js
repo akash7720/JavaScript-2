@@ -25,3 +25,6 @@ console.log(2 == "2")
 console.log(2 === 2)   // === : it checks data and datatypes
 console.log(2 === "2")
 
+
+console.log("Akash")
+
