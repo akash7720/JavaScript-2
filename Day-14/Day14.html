@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- <style>
+         #Register{
+            margin-top: 50px;
+            line-height: 25px; 
+            text-align: center;
+         }
+
+    </style> -->
+</head>
+<body >
+    <!-- <fieldset> -->
+    <!-- <legend>Register-From</legend> -->
+    <form id="Register" onsubmit="Register(event)">
+        <h1>Register</h1>
+    <label>Name:</label><br/>
+     <input type="text"  id="name"/><br/>
+     <label>Email:</label><br/>
+    <input type="email" id="email" /><br/>
+    <label>Password:</label><br/>
+    <input type="password" id="password"/><br/>
+    <label>ConfirmPassword:</label><br/>
+    <input type="password" id="confirmPassword"/><br/>
+   <input type="submit" value="Register"/>
+    </form>
+<!-- </fieldset> -->
+    
+</body>
+
+<script>
+    
+    function Register(event){
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        const confirmPassword = document.getElementById("confirmPassword").value;
+        console.log(name,email,password,confirmPassword)
+
+
+       if(name && email && password && confirmPassword){
+        if(password === confirmPassword){
+            localStorage.getElementById()
+
+        }else{
+            return alert("Password & confirmPassword are not matched")
+        }
+
+       }else{
+          return alert("All faildes are requared")
+       }
+    }
+    
+    
+    
+</script>
+
+</html>
+
+

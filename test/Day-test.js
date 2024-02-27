@@ -1,4 +1,5 @@
-// Q addition of array target 1+2+3+4+5= 15
+
+//Q addition of array target 1+2+3+4+5= 15
 // var num = [1,2,3,4,5]
 
 // var addition = 0;
@@ -22,35 +23,286 @@
 // }
 
 
-//Q find th starting and ending position of a given target value 
-      //  num = [5,7,7,8,8,10 ]
-      //  target = 8   // output is 3 4
-
-      // var num =[5,7,7,8,8,10 ]
-
-      // for( var i=0; i<num.length ; i++){
-      //     if (num [i] == 8){
-      //       console.log(i)
-
-      //     } 
-
-      // }
-     
-
-
-      var array = [1, 2, 4, 56, 7, 8, 3, 2, 5, 7];
-      var target = 12;
-
-      function FindTargetedValue(array,target){
-           for(var i = 0 ; i < array.length -1; i ++){
-              for(var j = i + 1 ; i< array.length; j++){
-               //console.log(array[i] ,array[j])
-               if(array[i] + array[j] == target){
-                  console.log(array[i] , array[j])
-               }
-              
+//Q 1 
+//      //const removeElement = function (nums, val) {
+       function removeElement(nums, val){
+            let count = 0;
+          
+            for (let i = 0; i < nums.length; i++) {
+              if (nums[i] !== val) {
+                nums[count] = nums[i];
+                count++;
               }
-           }
-         }
-      FindTargetedValue(array,target)
+            }
+            return count;
+          };
+          
+          console.log(removeElement([3, 2, 2, 3], 3));
+          console.log(removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2));
+          
+    
+//Q 2 & 4
+      // var array = [1, 2, 4, 56, 7, 8, 3, 2, 5, 7];
+      // var target = 12;
+
+      // function FindTargetedValue(array,target){
+      //      for(var i = 0 ; i < array.length -1; i ++){
+      //         for(var j = i + 1 ; i< array.length; j++){
+      //          //console.log(array[i] ,array[j])
+      //          if(array[i] + array[j] == target){
+      //             console.log(array[i] , array[j])
+      //          }
+              
+      //         }
+      //      }
+      //    }
+      // FindTargetedValue(array,target)
+
+
+//Q3
+//       var array =[1,2,3,4,5]
+//       let addition = 0
+
+//      for (var i = 0; i < array.length; i++) {
+//         addition += array[i];
+       
+//      }
+//     console.log(addition);
       
+      
+//Q 5 
+
+//   var arr=[1, 2, 3, 4, 5]
+  
+//   var result = [];
+//   function  reverseArray (arr){
+//       for (var i = 0; i < arr.length; i++) {
+//         result.unshift(arr[i]);
+//       }
+//       return result;
+//     };
+//     console.log(reverseArray([1, 2, 3, 4, 5]));
+    
+
+// Q find unique number
+
+// var array =[1,2,1,3,4,5,2,3,5,1];
+// var myAnswer = {}
+
+//       for(var i =0; i< array.length; i++){
+//         if(myAnswer[array[i]]===undefined){
+//             myAnswer[array[i]]=1
+//            console.log(array[i])
+//       }
+//     }
+
+
+//Q find addition two numbers is target
+// var array = [1, 2, 4, 56, 7, 8, 3, 2, 5, 7];
+// var target = 12
+
+// function FindTargetNum(array,target){
+//     for (var i = 0; i < array.length -1 ; i++) {
+//      for (var j= i+1; j < array.length; j++) {
+//         if(array[i]+ array[j]== target){
+//             console.log(array[i],array[j])
+//         }
+      
+//      }
+      
+//     }
+// }
+
+// FindTargetNum(array,target)
+
+
+
+//Q 6 addition of array target 1+2+3+4+5= 15
+// var num = [1,2,3,4,5]
+// var addition= 0
+
+// for (var i = 0; i < num.length; i++) {
+//       if(addition += num[i]){
+         
+//       } 
+      
+// }
+// console.log(addition)
+
+
+
+//Q7 factorial number
+
+// var ans = 1
+// var result = fact(5)
+
+// function fact(value){
+//       for(var i=value ; i >=1 ; i --){
+//          ans*=i
+//       }
+//       return ans
+
+//     }
+//   console.log(result)
+
+
+
+//Q 7 
+//const calculateFactorial = function (n) using while loop 
+// let result = 1;
+// function  calculateFactorial(n) {
+//       while (n > 1) {
+//         result *= n;
+//         n--;
+//       }
+    
+//       return result;
+//     };
+    
+//     console.log(calculateFactorial(5));
+//     console.log(calculateFactorial(3));
+//     console.log(calculateFactorial(6));
+
+
+//Q13 find th starting and ending position of a given target value 
+      //  num = [5,7,7,8,8,10 ]
+      //   output is 3 4
+
+// function FindeIndexArray(){
+//       var num =[5,7,7,8,8,10 ]
+//    var target = 8  
+// //      var Ans= []
+//       for (let i = 0; i < num.length; i++) {
+//             if(num[i] == target){
+//           console.log(num[i])
+//             }
+
+//       }
+// }
+
+// Q 9 
+// const result = prime(98);
+
+// function prime(n) {
+//       if (n <= 1) {
+//         return false;
+//       }
+    
+//       for (let i = 2; i <= Math.sqrt(n); i++) {
+//         if (n % i === 0) {
+//           return false;
+//         }
+//       }
+//       return true;
+//     }
+//     console.log(result);
+//      console.log(prime(97)); //true
+//     console.log(prime(98));  //false
+
+
+//Q 11 
+
+//  function findMissingNumber (nums){
+//       nums.push(0);
+//       const noDuplicates = [...new Set(nums)];
+    
+//       const n = noDuplicates.length;
+    
+//       const expectedSum = (n * (n + 1)) / 2;
+//       let actualSum = 0;
+    
+//       for (let i = 0; i < noDuplicates.length; i++) {
+//         actualSum = actualSum + noDuplicates[i];
+//       }
+    
+//       return expectedSum - actualSum;
+//     };
+    
+//     console.log(findMissingNumber([3, 0, 1,]));
+//     console.log(findMissingNumber([9, 6, 4, 2, 3, 5, 7, 0, 1]));
+
+
+
+// Q 12
+// const needleAndHaystack = function (haystack, needle) {
+//       if (haystack.includes(needle)) {
+//         return haystack.indexOf(needle);
+//       } else {
+//         return -1;
+//       }
+//     };
+    
+//     console.log(needleAndHaystack(`sadbutsad`, "sad"));
+//     console.log(needleAndHaystack(`butsad`, "sad"));
+//     console.log(needleAndHaystack(`airplane`, "plane"));
+
+
+//Q 13
+
+//const findTarget = function (nums, target) 
+
+//   function findTarget (nums, target)  {
+//       if (nums.includes(target)) {
+//         const start = nums.indexOf(target);
+//         const last = start + 1;
+//         return [start, last];
+//       } else {
+//         return [-1, -1];
+//       }
+//     };
+    
+//     console.log(findTarget([5, 7, 7, 8, 8, 10], 8));
+//     console.log(findTarget([1, 3, 5, 6], 5));
+
+
+    //Q15
+   
+//     function removeDuplicate(str) {
+//       const arr = str.split("");
+//       const set = [...new Set(arr)];
+    
+//       let newStr = "";
+//       for (let i = 0; i < set.length; i++) {
+//         newStr = newStr + set[i];
+//       }
+    
+//       return newStr;
+//     };
+    
+//     console.log(removeDuplicate(`hello`));
+    
+
+//Q4 palindrome
+
+//   var name= "ABCDDCBA"
+
+//  function FindString(string){
+//    for( var i=0 ; i< Math.floor(string.length/2); i++){
+//       if(string[i] !== string[string.length -1-i]){
+//             return("false")
+//       }
+
+//    }return("true")
+
+// }
+// console.log(FindString(name))
+
+
+//while loop palindrome
+
+
+// var string='abccba'
+
+// function FindPalindrome(string){
+//       var left= 0
+//       var right = string.length-1
+//      while(left<right){
+//       if(string[left]!==string[right]){
+//           return'not a palindrome'
+//       }else{
+//             left++
+//             right--
+//            }
+//      }return'its palindrome'
+// }
+// console.log(FindPalindrome(string))

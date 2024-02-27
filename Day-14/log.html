@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login2</title>
+</head>
+<body>
+    <h1>Login </h1>
+    <form onsubmit="Login(event)">
+        <label>Email</label><br/>
+        <input type="email" id="email"><br/>
+        <label>Password</label><br/>
+        <input type="password" id="password"/> <br/>
+        <input type="submit" value="Login"/><br/>
+    </form>
+</body>
+
+<script>
+      function Login(event){
+        event.preventDefault();
+         const email =document.getElementById("email").value;
+         const password =document.getElementById("password").value;
+         console.log(email,password)
+
+
+         if(email && password){  
+            const usersList = JSON.parse(localStorage.getItem("users"))
+        if( usersList ){
+
+          for(var i = 0; i <  usersList .length; i++){
+            if( usersList[i].email===email && usersList[i].password === password){
+                localStorage.setItem("currentUsers" ,JSON.stringify(usersList[i]))
+
+
+                document.getElementById("email").value=""
+                document.getElementById("password").value=""
+                
+                 alert("login Succssfull")
+                 window.location.href="Home.html"
+            }
+        }
+          
+        return alert("login failed.")
+
+        }else{
+              alert("you are not register")
+
+        } 
+
+      }else{
+          alert("all fildes are requared")
+      } 
+
+      }
+
+      
+      
+</script>
+</html>

@@ -62,15 +62,16 @@
 // var result = Fact(5)
 // console.log(result, "result")
 
+var ans = 1
+var result = fact(5)
 
 function fact (value){
-    var ans = 1
     for(var i =value ; i >= 1; i--){
             ans *= i     
     }
     return ans;
 }
-var result = fact(5)
+
 console.log(result)
 
 

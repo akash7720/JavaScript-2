@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form onsubmit="Register(event)">
+    <label>Name</label><br/>
+    <input type="text" id="name"/><br/>
+    <label>Email</label><br/>
+    <input type="email" id="email"/><br/>
+    <label>Passwoed</label><br/>
+    <input type="password" id="password"/><br/>
+    <label>ConfirmPassword</label><br/>
+    <input type="password" id="confirmPassword"/><br/>
+    <input type="submit" value="Register"/><br/>
+    </form>
+    
+</body>
+
+<script>
+      function Register(event){
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        const confirmPassword = document.getElementById("confirmPassword").value;
+        console.log(name,email,password,confirmPassword)
+
+        if(name && email && password && confirmPassword){
+            if(password === confirmPassword){
+                const userData={name:name,email:email,password:password}
+
+            const IsUserListExist=JSON.parse(localStorage.getItem("users"))
+            if(IsUserListExist?.length){
+                IsUserListExist.push(userData)
+             localStorage.setItem("users",JSON.stringify(IsUserListExist))
+            }else{
+                localStorage.setItem("users",JSON.stringify([userData]))
+            }
+            document.getElementById("name").value=""
+            document.getElementById("email").value=""
+            document.getElementById("password").value=""
+            document.getElementById("confirmPassword").value=""
+            alert("Registation is susseccfull")
+            window.location.href="Login.html"
+
+            }else{
+                return alert("password & confirmpassword are not matched")
+            }
+
+        }else{
+            return alert("All fildes are requared ")
+        }
+        
+      }
+      
+</script>
+</html>
