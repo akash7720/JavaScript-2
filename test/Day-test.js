@@ -25,20 +25,20 @@
 
 //Q 1 
 //      //const removeElement = function (nums, val) {
-       function removeElement(nums, val){
-            let count = 0;
+      //  function removeElement(nums, val){
+      //       let count = 0;
           
-            for (let i = 0; i < nums.length; i++) {
-              if (nums[i] !== val) {
-                nums[count] = nums[i];
-                count++;
-              }
-            }
-            return count;
-          };
+      //       for (let i = 0; i < nums.length; i++) {
+      //         if (nums[i] !== val) {
+      //           nums[count] = nums[i];
+      //           count++;
+      //         }
+      //       }
+      //       return count;
+      //     };
           
-          console.log(removeElement([3, 2, 2, 3], 3));
-          console.log(removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2));
+      //     console.log(removeElement([3, 2, 2, 3], 3));
+      //     console.log(removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2));
           
     
 //Q 2 & 4
@@ -288,21 +288,37 @@
 // console.log(FindString(name))
 
 
-//while loop palindrome
+//while loop palindrome  
+var string='abccba'
+
+function FindPalindrome(string){
+      var left= 0
+      var right = string.length-1
+     while(left<right){
+      if(string[left]!==string[right]){
+          return'not a palindrome'
+      }else{
+            left++
+            right--
+           }
+     }return'its palindrome'
+}
+console.log(FindPalindrome(string))
 
 
-// var string='abccba'
 
+// var name= "Abccba"
 // function FindPalindrome(string){
-//       var left= 0
-//       var right = string.length-1
-//      while(left<right){
-//       if(string[left]!==string[right]){
-//           return'not a palindrome'
-//       }else{
-//             left++
-//             right--
-//            }
-//      }return'its palindrome'
-// }
-// console.log(FindPalindrome(string))
+//         var left= 0;
+//         var right = string.length-1;
+//        while(left<right){
+//         if(string[left]!==string[right]){
+//             return'not a palindrome'
+//         }else{
+//               left++
+//               right--
+//              }
+//        }return'its palindrome'
+//   }
+//   console.log(FindPalindrome(string))
+  
