@@ -148,7 +148,7 @@
 
 
 //Q 7 
-//const calculateFactorial = function (n) using while loop 
+ 
 // let result = 1;
 // function  calculateFactorial(n) {
 //       while (n > 1) {
@@ -160,25 +160,10 @@
 //     };
     
 //     console.log(calculateFactorial(5));
-//     console.log(calculateFactorial(3));
-//     console.log(calculateFactorial(6));
+//     
 
 
-//Q13 find th starting and ending position of a given target value 
-      //  num = [5,7,7,8,8,10 ]
-      //   output is 3 4
 
-// function FindeIndexArray(){
-//       var num =[5,7,7,8,8,10 ]
-//    var target = 8  
-// //      var Ans= []
-//       for (let i = 0; i < num.length; i++) {
-//             if(num[i] == target){
-//           console.log(num[i])
-//             }
-
-//       }
-// }
 
 // Q 9 
 // const result = prime(98);
@@ -289,25 +274,25 @@
 
 
 //while loop palindrome  
-var string='abccba'
+// var string='abccba'
 
-function FindPalindrome(string){
-      var left= 0
-      var right = string.length-1
-     while(left<right){
-      if(string[left]!==string[right]){
-          return'not a palindrome'
-      }else{
-            left++
-            right--
-           }
-     }return'its palindrome'
-}
-console.log(FindPalindrome(string))
+// function FindPalindrome(string){
+//       var left= 0
+//       var right = string.length-1
+//      while(left<right){
+//       if(string[left]!==string[right]){
+//           return'not a palindrome'
+//       }else{
+//             left++
+//             right--
+//            }
+//      }return'its palindrome'
+// }
+// console.log(FindPalindrome(string))
 
 
 
-// var name= "Abccba"
+// var string = "Abccba"
 // function FindPalindrome(string){
 //         var left= 0;
 //         var right = string.length-1;
@@ -322,3 +307,84 @@ console.log(FindPalindrome(string))
 //   }
 //   console.log(FindPalindrome(string))
   
+
+
+//   var array = [1, 2, 4, 56, 7, 8, 3, 2, 5, 7];
+//   var target = 12;
+
+//    function FindTarget(array,target){
+//       for(var i = 0; i < array.length-1; i++){
+//             for(var j =i+1 ;i< array.length ; i++){
+//                if(array[i] = array[j] == target){
+//                    console.log(array[i],array[j])
+//                }
+//             } 
+//       }
+
+//    }
+//    FindTarget(array,target)
+
+   
+
+
+// var name= "abba"
+
+// function findPalindrome(string){
+//    for(var i =0; i < Math.floor(string.length/2);i++){
+//       if(string[i] !== string[string.length-1-i]){
+//              return("its not a palindrome")
+//       }
+//    }return("its palindreome")
+   
+
+// }
+// console.log(findPalindrome(name))
+
+
+
+      
+// var string ="caddac"
+
+// function findPalindrome(string){
+//     var  left =0 ;
+//     var  right = string.length-1;
+
+//       while( left < right){
+//           if(string[left] !== string[right]){
+//                return"not palindrome"
+//           }else{
+//               left++
+//               right--
+//           }
+
+//       }return"it palindreom"
+
+// }
+// console.log(findPalindrome(string))
+
+// var string = "Abccba"
+
+
+
+
+
+// for (var i = 0; i < 3; i++) {
+//       var stars = ''; 
+      
+//       for (var j = 2; j > i; j--) {
+//           stars += ' ';
+//       }
+//       for (let k = 0; k <= i; k++) {
+//             stars += '*'
+            
+//       }
+//       for(let t = 1; t>i; t--){
+//             stars+= ' '
+//       }
+//       for(let y = 1; y<=i; y++){
+//             stars+='*'
+//       }
+//       console.log(stars);
+//   }
+  
+
