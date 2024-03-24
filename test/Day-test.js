@@ -368,23 +368,117 @@
 
 
 
-// for (var i = 0; i < 3; i++) {
-//       var stars = ''; 
-      
-//       for (var j = 2; j > i; j--) {
-//           stars += ' ';
+
+
+
+
+// test day 20 -03
+
+
+// function isPrime(num) {
+//       if (num <= 1) {
+//           return false;
 //       }
-//       for (let k = 0; k <= i; k++) {
-//             stars += '*'
-            
+//       for (let i = 2; i <= Math.sqrt(num); i++) {
+//           if (num % i === 0) {
+//               return false;
+//           }
 //       }
-//       for(let t = 1; t>i; t--){
-//             stars+= ' '
-//       }
-//       for(let y = 1; y<=i; y++){
-//             stars+='*'
-//       }
-//       console.log(stars);
+//       return true;
 //   }
   
+//   function printPrimes() {
+//       for (let i = 1; i <= 100; i++) {
+//           if (isPrime(i)) {
+//               console.log(i);
+//           }
+//       }
+//   }
+  
+//   printPrimes();
+  
+  
 
+  
+  
+
+//  for (var i = 0; i < 3; i++) {
+//             var stars = ' '; 
+            
+//             for (var j = 3; j > i; j--) {
+//                 stars += ' ';
+//             }
+//             for (let k = 0; k <= i; k++) {
+//                   stars += '*'
+                  
+//             }
+//             for(let t = 2; t>i; t--){
+//                   stars+= ' '
+//             }
+//             for(let y = 4; y<=i; y++){
+//                   stars+='* '
+//             }
+//             for(let f = 1; f>i; f--){
+//                   stars+= ' '
+//             }
+//             // for(let c = 2; c<=i; c++){
+//             //       stars+=' '
+//             // }
+//             // for(let b = 1; b>i; b--){
+//             //       stars+= ' '
+//             // }
+//             // for(let b = 2; b<=i; b++){
+//             //       stars+='*'
+//             // }
+//             console.log(stars);
+//         }
+
+
+// var string ="Hello World"
+
+// function reverseString(string) {
+//       let reversedString = '';
+//       for (let i = string.length - 1; i >= 0; i--) {
+//           reversedString += string[i];
+//       }
+//       return reversedString;
+//   }
+  
+ 
+//   console.log(reverseString(string));
+  
+
+
+
+var originalString = "hello";
+
+function removeDuplicates(string){
+    var result = '';
+    var i = 0;
+    while (i < string.length) {
+        var current = string[i];
+        if (result.indexOf(current) === -1) {
+            result += current;
+        }
+        i++;
+    }
+    return result;
+}
+
+console.log(removeDuplicates(originalString));
+  
+  
+
+
+//Q
+let num = 5;
+
+while (num >= 1) {
+    let space = " ".repeat(5 - num);
+    let sequence = "";
+    for (let i = 1; i <= num; i++) {
+        sequence += i;
+    }
+    console.log(space + sequence);
+    num--;
+}
