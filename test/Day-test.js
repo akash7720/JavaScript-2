@@ -450,35 +450,40 @@
 
 
 
-var originalString = "hello";
+// var originalString = "hello";
 
-function removeDuplicates(string){
-    var result = '';
-    var i = 0;
-    while (i < string.length) {
-        var current = string[i];
-        if (result.indexOf(current) === -1) {
-            result += current;
-        }
-        i++;
-    }
-    return result;
-}
+// function removeDuplicates(string){
+//     var result = '';
+//     var i = 0;
+//     while (i < string.length) {
+//         var current = string[i];
+//         if (result.indexOf(current) === -1) {
+//             result += current;
+//         }
+//         i++;
+//     }
+//     return result;
+// }
 
-console.log(removeDuplicates(originalString));
+// console.log(removeDuplicates(originalString));
   
   
 
 
 //Q
-let num = 5;
+// let num = 5;
 
-while (num >= 1) {
-    let space = " ".repeat(5 - num);
-    let sequence = "";
-    for (let i = 1; i <= num; i++) {
-        sequence += i;
-    }
-    console.log(space + sequence);
-    num--;
-}
+// while (num >= 1) {
+//     let space = " ".repeat(5 - num);
+//     let sequence = "";
+//     for (let i = 1; i <= num; i++) {
+//         sequence += i;
+//     }
+//     console.log(space + sequence);
+//     num--;
+// }
+
+
+
+for (i = 1 ; i <= 100 ; i++)
+    console.log(i);

@@ -30,7 +30,7 @@ console.log("true",(typeof("true")))   //string
 // it is store data 
 
 // three types of varibles
-// 1- var     hosting is posible in only var 
+// 1- var     hoisting is posible in only var 
 // 2- const
 // 3- let
 
